@@ -5,7 +5,7 @@
  * 2. URL 携带 proxyip=xxx 时，通过反代 IP 落地
  */
 
-const userID = '你的-UUID-在这里'; // 必须与客户端一致
+const userID = '48d13615-9311-4fb6-96f9-d66362573314'; // 必须与客户端一致
 
 export const onRequest = async (context) => {
     const { request } = context;
@@ -107,3 +107,4 @@ async function vlessOverWSHandler(request, customProxyIP) {
 
     return new Response(null, { status: 101, webSocket: client });
 }
+
