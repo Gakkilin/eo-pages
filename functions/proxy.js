@@ -2,7 +2,7 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const secretPath = '/48d13615'; // 你的暗号路径
-    const targetHost = '48d13615-9311-4fb6-96f9-d66362573314'; // 【重点】填入你的 Koyeb 域名
+    const targetHost = ''; // 【重点】填入你的 Koyeb 域名
 
     // 1. 如果路径匹配暗号，执行代理逻辑
     if (url.pathname === secretPath) {
@@ -24,3 +24,4 @@ export default {
     return new Response('Not Found', { status: 404 });
   }
 };
+
