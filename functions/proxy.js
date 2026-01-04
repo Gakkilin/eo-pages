@@ -3,7 +3,7 @@ export default {
         let url = new URL(request.url);
         if (url.pathname.startsWith('/')) {
             var arrStr = [
-                'glad-canid-zero006-39768b9e.koyeb.app', // 此处单引号里填写你的节点伪装域名
+                'xxx', // 此处单引号里填写你的节点伪装域名
             ];
             url.protocol = 'https:'
             url.hostname = getRandomArray(arrStr)
@@ -17,3 +17,4 @@ function getRandomArray(array) {
   const randomIndex = Math.floor(Math.random() * array.length);
   return array[randomIndex];
 }
+
